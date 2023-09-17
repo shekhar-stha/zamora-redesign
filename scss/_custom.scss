@@ -120,6 +120,11 @@ p {
     padding-bottom: 12px;
 }
 
+section{
+    margin-bottom: 4rem;
+    overflow-x: hidden;
+}
+
 .btn-check:checked+.btn,
 :not(.btn-check)+.btn:active,
 .btn:first-child:active,

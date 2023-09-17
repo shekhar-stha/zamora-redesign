@@ -18,11 +18,6 @@
 
     <link rel="stylesheet" href="/css/index.css">
 
-    <!-- Slick CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -31,21 +26,23 @@
 <body>
     <section>
         <!-- Top of the navbar -->
-        <div class="bg-secondary top-information">
+        <div class="bg-secondary top-information" data-aos="fade-up">
             <div class="container py-3 d-flex justify-content-between">
                 <a href="/index.html#serviceAreas" title="location" class="text-white fw-500 ms-4">
                     <span class="me-3"><i class="fs-15 me-1 fa-solid fa-location-dot"></i>Austin, Texas</span>
                 </a>
 
-                <a title="Phone Number" href="tel:+17372070337" class="text-white fw-500"><i class="fs-15 fa-solid fa-phone"></i> +1 (737) 207-0337</a>
+                <a title="Phone Number" href="tel:+17372070337" class="text-white fw-500"><i
+                        class="fs-15 fa-solid fa-phone"></i> +1 (737) 207-0337</a>
             </div>
         </div>
 
         <!-- Navbar -->
         <div class="nav-hero">
-            <nav class="navbar navbar-expand-xl navbar-dark ">
+            <nav class="navbar navbar-expand-xl navbar-dark " data-aos="fade-up">
                 <div class="container">
-                    <a title="Homepage" class="navbar-brand" href="/index.html"><img src="/img/logo-white.png" alt=""></a>
+                    <a title="Homepage" class="navbar-brand" href="/index.html"><img src="/img/logo-white.png"
+                            alt=""></a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -56,55 +53,58 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                                <a title="Home" class="nav-link" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a title="Lawn Care Service Dropdown" class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Lawn Care Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/lawn-care.html">Lawn Care</a>
+                                    <li><a title="Lawn Care Navbar" class="dropdown-item" href="/lawn-care.html">Lawn
+                                            Care</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="/commercial-lawn-care-austin.html">Commercial
+                                    <li><a title="Commercial Lawn Care Navbar" class="dropdown-item"
+                                            href="/commercial-lawn-care-austin.html">Commercial
                                             Lawn Care</a>
                                     </li>
-                                    <li><a class="dropdown-item"
+                                    <li><a title="Residential Lawn Care Navbar" class="dropdown-item"
                                             href="/residential-lawn-mowing-austin-texas.html">Residential Lawn
                                             Care</a></li>
-                                    <li><a class="dropdown-item" href="/lawn-care-near-austin.html">Lawn Care
+                                    <li><a title="Lawn Care near Austin Navbar" class="dropdown-item"
+                                            href="/lawn-care-near-austin.html">Lawn Care
                                             near Austin</a></li>
-                                    <li><a class="dropdown-item" href="/lawn-mowing-near-austin.html">Lawn
+                                    <li><a title="Lawn Mowing Near Austin" class="dropdown-item"
+                                            href="/lawn-mowing-near-austin.html">Lawn
                                             Mowing near Austin</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a title="Land Clearing Services Dropdown" class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Land Clearing Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/land-clearing.html">Land Clearing
+                                    <li><a title="Land Clearing Navbar" class="dropdown-item"
+                                            href="/land-clearing.html">Land Clearing
                                             Service</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="/land-clearing-near-austin.html">Land
+                                    <li><a title="Land Clearing Near Austin" class="dropdown-item"
+                                            href="/land-clearing-near-austin.html">Land
                                             Clearing near
                                             Austin</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
+                                <a title="Contact Page" class="nav-link" href="/contact.html">Contact</a>
                             </li>
                         </ul>
-                        <!-- <button data-text="Awesome" class="nav-button">
-                                                <span class="actual-text">&nbsp;Contact&nbsp;</span>
-                                                <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
-                                            </button> -->
-                        <a class="nav-button btn btn-success fw-500 text-white px-3 fs-19 text-white" href="/cta.html">
-                           Free
-                            Estimate</a>
+
+                        <a title="Free Estimate CTA"
+                            class="nav-button btn btn-success fw-500 text-white px-3 fs-19 text-white" href="/cta.html">
+                            Free Estimate</a>
                     </div>
                 </div>
             </nav>
@@ -113,8 +113,8 @@
             <div class="hero" data-aos="zoom-in">
                 <div class="container h-100">
                     <div class="d-flex flex-column justify-content-center h-100 hero-info">
-                        <h1 class="text-white mb-4">Elevate Your <span class="underline">Outdoor</span> Space with
-                            Expert <span class="underline">Lawn</span> Care Services</h1>
+                        <h1 class="text-white mb-4">Delivering Top-Notch <span class="text-secondary">Lawn</span>
+                            Services in <span class="text-secondary">Austin, Texas</span></h1>
                         <p class="text-white">
                             Transforming Austin, Texas Properties into Lush, Healthy, and
                             Enchanting
@@ -122,22 +122,23 @@
                         </p>
 
                         <div class="d-flex justify-content-center mt-5 pt-3 pb-lg-0 pb-3">
-                            <a href="/cta.html" class="btn btn-success text-white fs-19">Get Free Quote</a>
-                            <a href="/contact.html"
+                            <a title="Free Quote Navigation" href="/cta.html"
+                                class="btn btn-success text-white fs-19">Get Free Quote</a>
+                            <a title="Contact Us Navigation" href="/contact.html"
                                 class="btn btn-outline-white border-2 ms-4 px-4 fs-19 border-2 fw-500">Contact
                                 Us</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <img class="hero-img" src="/img/aerial-view-lawn-mowing.jpg" alt="hero img">
+            <img class="hero-img" src="/img/lawn-with-home.jpg" alt="hero img">
         </div>
     </section>
 
-    <section id="#whyUs" class="why-us my-5">
+    <section id="#aboutUs" class="why-us my-5 pt-5">
         <div class="container">
             <div class="d-lg-flex flex-row-reverse justify-content-between align-items-top">
-                <div class="small-big-header col-lg-6">
+                <div class="small-big-header col-lg-6" data-aos="fade-left">
                     <p>Why Us</p>
                     <h3>Why we are the best among all other guys?</h3>
                     <span>
@@ -153,25 +154,22 @@
                         show you why we are the ultimate choice for your lawn care needs.
                     </span>
                     <br>
-                    <a class="btn btn-secondary mt-4 btn-lg" href="/cta.html">Get Free Quote</a>
+                    <a title="Free Quote" class="btn btn-secondary mt-4 btn-lg" href="/cta.html">Get Free Quote</a>
                 </div>
-                <div class="col-lg-5 d-sm-flex justify-content-between mt-lg-0 mt-3">
-                    <img class="img-fluid rounded-2 why-us-img"
-                        src="/img/beautiful-garden-backyard-grass-mowing-2022-10-26-03-44-06-utc.jpg" alt="">
-                    <!-- <div class="why-us-card me-lg-2 me-sm-3">
-                        <img src="/img/trophy.png" alt="">
-                        <h4>Experience Matters</h4>
-                        <p>Trust our decade of expertise to transform your lawn into a breathtaking oasis.</p>
-                    </div>
-                    <div class="why-us-card ms-lg-2 ms-sm-3">
-                        <img src="/img/trophy.png" alt="">
-                        <h4>Uncompromising Excellence</h4>
-                        <p>xperience unparalleled excellence with our meticulous attention to detail.</p>
-                    </div> -->
+                <div class="col-lg-5 d-sm-flex justify-content-between mt-lg-0 mt-3 img-div" data-aos="fade-right">
+                    <img style="transform: scaleX(-1);" class="img-fluid rounded-2 why-us-img" src="/img/gallery3.jpg"
+                        alt="Home image with Beautiful Lawn">
                 </div>
             </div>
-            <div class="why-us-grid mt-5">
-                <div class="why-us-card">
+
+        </div>
+    </section>
+
+    <section class="ratings-section">
+        <img class="bg-img" src="/img/aerial-view-lawn-mowing.jpg" alt="Aerial Lawn Mowing">
+        <div class="container">
+            <div class="ratings-grid mt-5" data-aos="fade-up">
+                <div class="ratings-card">
                     <img src="/img/facebook.png" alt="">
                     <h4>Facebook</h4>
                     <p class="text-center ratings">
@@ -182,7 +180,7 @@
                         <i class="fa-solid fa-star"></i>
                     </p>
                 </div>
-                <div class="why-us-card">
+                <div class="ratings-card">
                     <img src="/img/google.png" alt="">
                     <h4>Google</h4>
                     <p class="text-center ratings">
@@ -193,7 +191,7 @@
                         <i class="fa-solid fa-star"></i>
                     </p>
                 </div>
-                <div class="why-us-card">
+                <div class="ratings-card">
                     <img src="/img/Yelp.png" alt="">
                     <h4>Yelp</h4>
                     <p class="text-center ratings">
@@ -204,32 +202,11 @@
                         <i class="fa-solid fa-star"></i>
                     </p>
                 </div>
-
-                <!-- <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Customer Satisfaction</h4>
-                    <p>Bringing your vision to life with attentive service and exceptional results.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Trustworthy, Reliable</h4>
-                    <p>Your dependable partner for reliable service and exceptional results.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Attention to Detail</h4>
-                    <p> Meticulous craftsmanship for breathtaking lawns with impeccable attention to detail.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Hassle-Free Experience</h4>
-                    <p>Indulge in a hassle-free experience while we create and maintain your dream lawn.</p>
-                </div> -->
             </div>
         </div>
     </section>
 
-    <section id="ourServices" class="our-services mt-5">
+    <section id="ourServices" class="our-services mt-5" data-aos="fade-up">
         <div class="container">
             <div class="small-big-header">
                 <p>Our Services</p>
@@ -237,49 +214,51 @@
             </div>
             <div data-aos="fade-left" class="multiple-slides">
                 <div class="service-div">
-                    <img class="slider-img-full"
-                        src="/img/gardener-mowing-grass-and-cleaning-backyard-garden-2022-10-26-03-49-03-utc.jpg"
-                        alt="">
+                    <img class="slider-img-full" src="/img/gardener-mowing-grass.jpg" alt="Gardener Mowing">
                     <div class="information">
                         <h4>Lawn Care <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Professional maintenance services including mowing, edging,
                             trimming, and fertilization for a
-                            healthy and well-groomed lawn. <a
+                            healthy and well-groomed lawn.
+                            <a title="Free Quote Lawn Care"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
-                                href="/cta.html">Free Quote</a> </p>
+                                href="/cta.html">Free Quote</a>
+                        </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full" src="/img/autumn-garden-works-2022-10-26-03-46-24-utc (1).jpg" alt="">
+                    <img class="slider-img-full" src="/img/garden-works.jpg" alt="Garden Work">
                     <div class="information">
                         <h4>Landscaping <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Customized landscape design and installation to create beautiful
                             and functional outdoor spaces tailored to your preferences. <a
+                                title="Free Quote Landscaping"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full" src="/img/Depositphotos_55825213_XL (1).jpg" alt="">
+                    <img class="slider-img-full" src="/img/background-with-sofa.jpg" alt="Backyard with Sofa">
                     <div class="information">
                         <h4>Outdoor Living Spaces <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information"> Design and construction of outdoor living areas such as patios,
                             decks, and fire pits, transforming your yard into an inviting and enjoyable space for
-                            relaxation and entertainment. <a
+                            relaxation and entertainment. <a title="Free Quote Backyard"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full" src="/img/jason-jarrach-QqXVYmXj8mk-unsplash (1).jpg" alt="">
+                    <img class="slider-img-full" src="/img/land-clearing-machine.jpg" alt="Land Clearing Machine">
                     <div class="information">
                         <h4>Land Clearing Services <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Professional clearing of overgrown properties, removal of trees,
                             brush, and debris to prepare the land for new construction or to create a clean and open
-                            space. <a class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
+                            space. <a title="Free Quote Land Clearing Services"
+                                class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
@@ -290,47 +269,70 @@
                         <h4>Irrigation Repairs <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Efficient irrigation repair services: Fixing leaks and ensuring
                             your system runs smoothly to keep your lawn thriving and water-efficient. <a
+                                title="Free Quote Irrigation Repairs"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full"
-                        src="/img/beautiful-garden-backyard-grass-mowing-2022-10-26-03-44-06-utc.jpg" alt="">
+                    <img class="slider-img-full" src="/img/white-home-with-lawn.jpg" alt="White Home with lawn">
                     <div class="information">
                         <h4>Lawn Mowing <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Regular cutting of grass to an appropriate height using
                             professional equipment, ensuring an even and well-maintained appearance.<a
+                                title="Free Quote Lawn Mowing"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full" src="/img/junk-removal.jpg" alt="">
+                    <img class="slider-img-full" src="/img/junk-removal.jpg" alt="Junk Removal">
                     <div class="information">
                         <h4>Junk Removal <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Our professionally-trained teams are equipped and trained to
                             remove your unwanted items and dispose of them properly and safely.<a
+                                title="Free Quote Junk Removal"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
 
                 <div class="service-div">
-                    <img class="slider-img-full" src="/img/sod-install.jpeg" alt="">
+                    <img class="slider-img-full" src="/img/sod-install.jpeg" alt="Sod Installation">
                     <div class="information">
                         <h4> Sod Installation <i class="fs-17 fa-solid fa-chevron-right"></i></h4>
                         <p class="hidden-information">Our sod installation experts have years of experience in nurturing
-                            gorgeous, healthy lawns for our customers. <a
+                            gorgeous, healthy lawns for our customers. <a title="Free Quote Sod Installation"
                                 class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14"
                                 href="/cta.html">Free Quote</a> </p>
                     </div>
                 </div>
     </section>
 
-    <section id="testimonials" class="testimonial my-3">
+    <!-- CTA -->
+    <section class="banner-new-talents position-relative text-white" data-aos="fade-up">
+        <img class="bg-img" src="/img/lawn-with-home.jpg" alt="Lawn with Beautiful Home">
+        <div class="p-4 py-5">
+            <div class="row align-items-center text-lg-start text-center px-lg-5 h-100">
+
+                <h3 class="my-3 mb-5 mt-0 mt-sm-3 text-white text-center">Experience the Best Lawn Services in Austin,
+                    Texas. Get a Free Estimate Now!
+                    <br>
+                </h3>
+                <div class="d-flex justify-content-center">
+                    <a title="Free Quote CTA" href="/cta.html" class="btn btn-secondary btn-lg rounded px-sm-5 px-4">
+                        Get Free Quote
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonial my-3" data-aos="fade-up">
         <div class="container py-5">
             <div class="small-big-header">
                 <p>TESTIMONIALS</p>
@@ -341,7 +343,7 @@
                 <div class="testimonial-card bg-white mx-3 my-3 rounded">
                     <i class="quote-1 fa-solid fa-quote-left"></i>
                     <div class="profile-info d-flex d-grid gap-4">
-                        <img class="rounded-circle" src="/img/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg" alt="" />
+                        <img class="rounded-circle" src="/img/stephanie-liverani.jpg" alt="Sarah Image" />
                         <div class="">
                             <h5 class="text-secondary">Sarah Johnson</h5>
                             <p class="text-info mb-4">Austin</p>
@@ -359,8 +361,7 @@
                 <div class="testimonial-card bg-white mx-3 my-3 rounded">
                     <i class="quote-1 fa-solid fa-quote-left"></i>
                     <div class="profile-info d-flex d-grid gap-4">
-                        <img class="rounded-circle" src="/img/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
-                            alt="" />
+                        <img class="rounded-circle" src="/img/man-in-formals.jpg" alt="John Davis Image" />
                         <div class="">
                             <h5 class="text-secondary">John Davis</h5>
                             <p class="text-info mb-4">Austin</p>
@@ -378,8 +379,7 @@
                 <div class="testimonial-card bg-white mx-3 my-3 rounded">
                     <i class="quote-1 fa-solid fa-quote-left"></i>
                     <div class="profile-info d-flex d-grid gap-4">
-                        <img class="rounded-circle" src="/img/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg"
-                            alt="" />
+                        <img class="rounded-circle" src="/img/christina.jpg" alt="Christina Image" />
                         <div class="">
                             <h5 class="text-secondary">Lisa Thompson</h5>
                             <p class="text-info mb-4">Austin</p>
@@ -397,7 +397,7 @@
                 <div class="testimonial-card bg-white mx-3 my-3 rounded">
                     <i class="quote-1 fa-solid fa-quote-left"></i>
                     <div class="profile-info d-flex d-grid gap-4">
-                        <img class="rounded-circle" src="/img/lethicia-matos-CSh-hNHc3Y8-unsplash.jpg" alt="" />
+                        <img class="rounded-circle" src="/img/lethicia.jpg" alt="Mark Wilson Image" />
                         <div class="">
                             <h5 class="text-secondary">Mark Wilson</h5>
                             <p class="text-info mb-4">Austin</p>
@@ -416,33 +416,10 @@
         </div>
     </section>
 
-
-    <section class="banner-new-talents position-relative text-white">
-        <div class="p-4 py-5">
-            <div class="row align-items-center text-lg-start text-center px-lg-5 h-100">
-                <div class="col-lg-9">
-                    <h3 class="my-3 mt-0 mt-sm-3 text-white">Experience the beauty of a perfectly
-                        manicured lawn."</h3>
-                    <p class="fs-18">
-                        <small class="fs-18">Contact us today for a free consultation and unlock the true potential of
-                            your
-                            outdoor space.</small>
-                    </p>
-                </div>
-                <div class="col-lg-3 mt-lg-0 mt-3">
-                    <a href="/cta.html"
-                        class="btn btn-light btn-lg rounded text-primary text-dark rounded-pill px-sm-5 px-4">
-                        Get Free Quote
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="service-areas my-5 py-4 position-relative">
-        <img class="img-fluid bg-img" src="/img/austin-texas-usa-2021-08-26-18-13-05-utc-min.jpg" alt="">
+        <img class="img-fluid bg-img" src="/img/austin-texas-map.jpg" alt="">
         <div class="container d-lg-flex justify-content-between py-5">
-            <div class="col-lg-6 me-2">
+            <div class="col-lg-6 me-2" data-aos="fade-right">
                 <div class="small-big-header">
                     <p class="mb-4">Service Areas</p>
                     <h3>Areas We Service in Austin</h3>
@@ -454,35 +431,101 @@
                 </p>
 
                 <div class="areas">
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Round Rock
+                    <a title="Round Rock" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i>Round Rock
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Lakeway
+                    <a title="Lakeway" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i>Lakeway
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Bastrop
+                    <a title="Bastrop" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i>Bastrop
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Manor
+                    <a title="Manor" href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Manor
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Pflugerville
+                    <a title="Pflugerville" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i>Pflugerville
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Buda
+                    <a title="Buda" href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Buda
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Kyle
+                    <a title="Kyle" href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Kyle
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Cedar Park
+                    <a title="Cedar Park" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i>Cedar Park
                     </a>
-                    <a href="/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i> Dripping
+                    <a title="Dripping Springs" href="/lawn-care-near-austin.html"><i
+                            class="fa-solid fa-chevron-right"></i> Dripping
                         Springs
                     </a>
                 </div>
 
-                <a class="btn btn-success fw-500 mt-5 btn-lg" href="/cta.html">Get Free Quote</a>
+                <a title="Free Quote" class="btn btn-success fw-500 mt-5 btn-lg" href="/cta.html">Get Free Quote</a>
             </div>
-            <div class="mt-lg-0 mt-5">
-                <img class="map img-fluid" src="/img/austin-map-removebg-preview.png" alt="">
+            <div class="mt-lg-0 mt-5" data-aos="fade-left">
+                <img class="map img-fluid" src="/img/austin-map.png" alt="Austin, Texas Map">
             </div>
         </div>
     </section>
 
+
+    <!-- * PORTFOLIO SECTION STARTS HERE  -->
+    <section class="portfolio py-5 mb-0" style="background-color: #d9e9d2;" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="portfolio__title text-center">
+                    <h3 class="header">Our Gallery</h3>
+                </div>
+
+                <div class="portfolio__img-container">
+                    <div class="portfolio-pic__row row">
+                        <div class="col-md-4">
+                            <div class="content">
+                                <a title="Gallery 1" href="/img/gallery1.jpg" data-lightbox="Gallery 1">
+                                    <img src="/img/gallery1.jpg" class="img-fluid portfolio__img" alt="card-img-1" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a title="Gallery 2" href="/img/gallery2.jpg" data-lightbox="Gallery 2">
+                                <img src="/img/gallery2.jpg" class="img-fluid portfolio__img" alt="card-img-2" />
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a title="Gallery 3" href="/img/gallery3.jpg" data-lightbox="Gallery 3">
+                                <img src="/img/gallery3.jpg" class="img-fluid portfolio__img" alt="card-img-3" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-pic__row row">
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="content h-100">
+                                <a title="Gallery 4" href="/img/gallery4.jpg" data-lightbox="Gallery 4">
+                                    <img src="/img/gallery4.jpg" class="img-fluid portfolio__img" alt="card-img-4" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-4">
+                            <div class="content h-100">
+                                <a title="Gallery 5" href="/img/gallery5.jpg" data-lightbox="Gallery 5">
+                                    <img style="max-width: 100% !important;" src="/img/gallery5.jpg"
+                                        class="img-fluid portfolio__img" alt="card-img-5" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4">
+                            <div class="content h-100">
+                                <a title="Gallery 6" href="/img/gallery6.jpg" data-lightbox="Gallery 6">
+                                    <img src="/img/gallery6.jpg" class="img-fluid portfolio__img" alt="card-img-6" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="faq my-5" id="faq">
         <div class="container py-5">
             <div class="small-big-header mb-4">
@@ -612,58 +655,58 @@
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Company</strong></p>
                     <div class="text-info">
-                        <p><a href="/land-clearing.html">Land Clearing</a></p>
-                        <p><a href="/lawn-care.html">Lawn Care</a></p>
-                        <p><a href="/contact.html">Contact Us</a></p>
-                        <p><a href="/lawn-mowing-near-austin.html">Lawn Mowing</a></p>
-                        <p><a href="/cta.html">Free Quote</a></p>
+                        <p><a title="Land Clearing" href="/land-clearing.html">Land Clearing</a></p>
+                        <p><a title="Lawn Care" href="/lawn-care.html">Lawn Care</a></p>
+                        <p><a title="Contact Us" href="/contact.html">Contact Us</a></p>
+                        <p><a title="Lawn Mowing" href="/lawn-mowing-near-austin.html">Lawn Mowing</a></p>
+                        <p><a title="Free Quote" href="/cta.html">Free Quote</a></p>
                     </div>
                 </div>
 
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Quick Links</strong></p>
                     <div class="text-info">
-                        <p><a href="/index.html#faq">FAQ</a></p>
-                        <p><a href="/index.html#ourServices">Services</a></p>
-                        <p><a href="/index.html#testimonials">Testimonials</a></p>
-                        <p><a href="/index.html#whyUs">Why Us</a></p>
+                        <p><a title="FAQ" href="/index.html#faq">FAQ</a></p>
+                        <p><a title="Services" href="/index.html#ourServices">Services</a></p>
+                        <p><a title="Testimonials" href="/index.html#testimonials">Testimonials</a></p>
+                        <p><a title="About Us" href="/index.html#abouUs">About Us</a></p>
                     </div>
                 </div>
 
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Contact us</strong></p>
                     <div class="text-info">
-                        <p class="d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope me-3" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                            </svg>
-                            Info@zamoraslawn.com
+
+                        <p>
+                            <a title="Phone Number" href="tel:+17372070337" class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                                <span> +1 (737) 207-0337</span>
+                            </a>
                         </p>
-                        <p class="d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-telephone me-3" viewBox="0 0 16 16">
-                                <path
-                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                            </svg>
-                            <span> +1 (737) 207-0337</span>
-                        </p>
-                        <p class="d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt me-3" viewBox="0 0 16 16">
-                                <path
-                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
-                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
-                            <span>Austin, Texas USA</span>
+
+                        <p>
+                            <a title="Location" href="/index.html#serviceAreas" class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                <span>Austin, Texas</span>
+                            </a>
                         </p>
                     </div>
                 </div>
             </div>
             <hr class="mt-4" />
 
-            <p class="pt-2 pb-3 fw-500 text-info text-center">Ⓒ zamora's Land Service 2023. All rights reserved.</p>
+            <p class="pt-2 pb-3 fw-500 text-info text-center">&copy zamora's Land Service 2023. All rights reserved.</p>
+            <p class="pt-2 pb-3 fw-500 text-info text-center">The content available on this website is owned by us and
+                our licensors. Copying any content, including images, without our consent is prohibited.</p>
         </div>
     </footer>
     <!-- End of Footer Section -->
@@ -673,19 +716,6 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
-    <!-- Slick -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
 
     <script src="/js/index.js"></script>
 
