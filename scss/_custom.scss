@@ -182,6 +182,12 @@ section{
     }
 }
 
+.btn-outline-secondary{
+    &:hover{
+        color: $white;
+    }
+}
+
 // Slick
 
 .slick-dots {

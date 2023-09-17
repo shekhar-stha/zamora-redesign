@@ -12003,6 +12003,10 @@ section {
   color: #212529;
 }
 
+.btn-outline-secondary:hover {
+  color: #fcfef7;
+}
+
 .slick-dots {
   display: flex !important;
   justify-content: center;
