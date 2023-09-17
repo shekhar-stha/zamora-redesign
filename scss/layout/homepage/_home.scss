@@ -11,7 +11,7 @@
         left: 0;
         z-index: -1;
         background: rgb(0, 0, 0);
-        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 0.7652310924369747) 32%, rgba(0, 0, 0, 0.695203081232493) 65%, rgba(0, 28, 15, 0.5355392156862745) 91%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 2%, rgba(0, 0, 0, 0.7820378151260504) 47%, rgba(0, 0, 0, 0.7372198879551821) 72%, rgba(0, 28, 15, 0.5943627450980392) 100%);
     }
 
     @media (max-width: 992px) {
@@ -444,7 +444,8 @@
             }
         }
     }
-    a{
+
+    a {
         width: 100%;
     }
 }
