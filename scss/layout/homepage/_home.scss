@@ -296,38 +296,6 @@
 }
 
 
-/* Testimonial Card */
-.testimonial-card {
-    overflow: hidden;
-    padding: 2rem 1.5rem;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.testimonial-card .quote-1 {
-    position: absolute;
-    font-size: 2rem;
-    color: $success;
-    top: 0px;
-    left: 0;
-}
-
-.testimonial-card .quote-2 {
-    position: absolute;
-    font-size: 2rem;
-    bottom: 0px;
-    right: 0;
-    color: $success;
-    transform: rotate(180deg);
-}
-
-.testimonial-card img {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-}
-
 /*banner*/
 .banner-new-talents {
     background-color: rgb(0, 0, 0, 0.6);
