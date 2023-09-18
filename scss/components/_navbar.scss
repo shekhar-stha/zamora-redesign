@@ -38,6 +38,10 @@ nav {
             font-size: 18px;
             margin: 0 1.2rem;
 
+            @media (max-width: 1400px) {
+                margin: 0 1rem;
+            }
+
             .nav-link {
                 color: $white;
                 position: relative;
