@@ -1,3 +1,13 @@
+<?php
+	
+	date_default_timezone_set('UTC');
+	
+	$website = 'zamoraoutdoorservices.net';
+	
+	$public_key_input = strrev($website) . date('Y') . md5($_SERVER['HTTP_USER_AGENT']);
+	$public_key = md5(hash('sha512', $public_key_input));
+	
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +40,7 @@
 <body>
 
     <!-- Top of the navbar -->
-   <div class="bg-secondary top-information" data-aos="fade-up">
+    <div class="bg-secondary top-information" data-aos="fade-up">
         <div class="container py-3 d-flex flex-vsm-row flex-column align-items-center justify-content-between">
             <a href="/index.html#serviceAreas" title="location" class="text-white fw-500 ms-4">
                 <span class="me-3"><i class="fs-15 me-1 fa-solid fa-location-dot"></i>Austin, Texas</span>
@@ -43,7 +53,7 @@
 
     <!-- Navbar -->
     <div>
-         <nav class=" white-nav navbar navbar-expand-xl navbar-white " data-aos="fade-up">
+        <nav class=" white-nav navbar navbar-expand-xl navbar-white " data-aos="fade-up">
             <div class="container">
                 <a title="Homepage" class="navbar-brand" href="/index.html"><img src="/img/logo.jpg"
                         alt="Navbar Transparent Logo"></a>
@@ -117,8 +127,7 @@
     <section class="contact-section pb-5">
         <div class="container pt-3">
             <div class="contact-section__img">
-                <img src="/img/backyard-garden.jpeg"
-                    alt="About-section-img" class="img-fluid" />
+                <img src="/img/backyard-garden.jpeg" alt="About-section-img" class="img-fluid" />
                 <div class="position-absolute w-100 h-100 bg-secondary top-0 start-0 opacity-50 rounded-2"></div>
                 <h3 class="contact-section__title">Contact Us</h3>
             </div>
@@ -162,8 +171,11 @@
                         <!-- CONTACT FORM STARTS HERE -->
                         <div class="col-lg-5 col-md-12 col-sm-12">
                             <div class="contact-section__form">
-                                <form action="#" class="form-group">
-                                    <h1 class="contact-form-right__form-title">Contact Us</h1>
+                                <form action="#" id="my-form" method="POST" class="form-group">
+
+                                    <input type="hidden" name="public_key" value="<?php echo $public_key; ?>">
+                                    <input type="hidden" name="website" value="zamoraoutdoorservices.net">
+                                    <h1 class="contact-form-right__form-title">Get Free Quote</h1>
                                     <!-- Lead add 1st row  -->
                                     <div class="contact-form-right__row">
                                         <!-- Full Name  -->
@@ -172,7 +184,7 @@
                                                 Full Name<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <input type="text" name="full-name" placeholder="Enter full name"
+                                                <input type="text" name="full_name" placeholder="First and Last name"
                                                     class="form-control" required />
                                             </div>
                                         </div>
@@ -186,7 +198,7 @@
                                                 Phone Number<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <input type="number" name="phone" placeholder="Enter your phone number"
+                                                <input type="text" name="phone" placeholder="Phone number"
                                                     class="form-control" required />
                                             </div>
                                         </div>
@@ -200,7 +212,20 @@
                                                 Email<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <input type="email" name="email" placeholder="Enter your email address"
+                                                <input type="email" name="email" placeholder="Primary email address"
+                                                    class="form-control" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-form-right__row">
+                                        <!-- Email  -->
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <label for="data" class="contact-form-right__title">
+                                                Property Address<span class="red-star">*</span>
+                                            </label>
+                                            <div class="">
+                                                <input type="text" name="address" placeholder="Enter your address"
                                                     class="form-control" required />
                                             </div>
                                         </div>
@@ -211,11 +236,11 @@
                                         <!-- Email  -->
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                             <label for="data" class="contact-form-right__title">
-                                                Message<span class="red-star">*</span>
+                                                Services Needed<span class="red-star">*</span>
                                             </label>
                                             <div class="">
-                                                <textarea class="form-control" placeholder="Type your message..."
-                                                    id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                <input type="text" name="service_needed"
+                                                    placeholder="All services needed." class="form-control" required />
                                             </div>
                                         </div>
                                     </div>
@@ -237,7 +262,7 @@
     </section>
 
 
-   <section class="banner-new-talents position-relative text-white mb-0">
+    <section class="banner-new-talents position-relative text-white mb-0">
         <img class="bg-img" src="/img/backyard-garden.jpeg" alt="Backyard Garden">
         <div class="p-4 py-5" data-aos="fade-up">
             <div class="row align-items-center text-lg-start text-center px-lg-5 h-100">
@@ -256,7 +281,7 @@
         </div>
     </section>
 
-     <footer>
+    <footer>
         <div class="container mt-5">
             <div class="row fw-500 fs-16">
                 <div class="col-lg pe-lg-5 me-lg-5 col-12 mb-lg-0 mb-5 text-lg-left">
@@ -280,8 +305,8 @@
                     <div class="text-info">
                         <p><a title="FAQ" href="/index.html#faq">FAQ</a></p>
                         <p><a title="Services" href="/index.html#ourServices">Services</a></p>
-                       
-                          <p><a title="About Us" href="/index.html#aboutUs">About Us</a></p>
+
+                        <p><a title="About Us" href="/index.html#aboutUs">About Us</a></p>
                     </div>
                 </div>
 
@@ -325,11 +350,42 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-
-
     <script src="./js/index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-   
+            $('#my-form').submit(function (event) {
+                event.preventDefault();
+
+                var formData = $(this).serialize();
+                var fullName = $('input[name="full_name"]').val();
+                var emailAddress = $('input[name="email"]').val();
+                var phoneNumber = $('input[name="phone"]').val();
+                var address = $('input[name="address"]').val();
+                var serviceNeeded = $('input[name="service_needed"]').val();
+                var phoneRegex = /^[0-9]{10}$/;
+                var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!fullName || !emailAddress || !phoneNumber || !address || !serviceNeeded) {
+                    alert('Please fill out all required fields.');
+                } else if (!emailRegex.test(emailAddress)) {
+                    alert('Please enter a valid email address.');
+                } else {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://zappyforms.com/activeforms.php',
+                        data: formData
+                    }).done(function (response) {
+
+                        $('#my-form')[0].reset();
+                        $('#submit-btn').prop('disabled', true);
+                        $('#my-form').html('<div class="alert alert-success">' + response + '<br><a href="" class="btn-dark btn">Try Again</a></div>');
+                    });
+                }
+
+            });
+
+        });
+    </script>
 
 </body>
 
